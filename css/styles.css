@@ -71,6 +71,9 @@ body {
 .nav-item {
 	color: var(--title-color);
 }
+.nav-list .link.current {
+	color: var(--accent-color);
+}
 
 .link:hover,
 .link:focus {
@@ -79,14 +82,12 @@ body {
 .button {
 	cursor: pointer;
 }
-.button:hover{
-	background: var(--active-btn-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-}
 
 .footer {
 	background-color: var(--primary-beckground-color);
+}
+.footer .link {
+	font-style: normal;
 }
 .footer-logo-word {
 	color: var(--primary-white-color);
@@ -105,7 +106,6 @@ body {
 }
 .hero-title {
 	color: var(--primary-white-color);
-	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -114,10 +114,15 @@ body {
 .hero-btn {
 	color: var(--primary-white-color);
 	background: var(--accent-color);
-	font-family: 'Roboto';
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.875;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+.hero-btn:hover,
+.hero-btn:focus{
+	background: var(--active-btn-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 }
@@ -126,7 +131,6 @@ body {
 }
 .benefits-title {
 	color: var(--title-color);
-	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -137,7 +141,6 @@ body {
 }
 .section-title {
 	color: var(--title-color);
-	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -150,10 +153,12 @@ body {
 }
 .team-title {
 	color: var(--title-color);
-	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
+}
+.team-list {
+	background-color: var(--primary-white-color);
 }
 .team-img {
 	width: 270px;
@@ -164,7 +169,6 @@ body {
 .filter-btn {
 	color: var(--title-color);
 	background-color: var(--accessary-white-color);
-	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.6;
